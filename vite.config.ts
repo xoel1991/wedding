@@ -7,4 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
   base: '/wedding/',
+  server: {
+    port: 3000, // 원하는 포트로 변경
+  },
 });
