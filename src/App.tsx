@@ -57,7 +57,7 @@ function App() {
           <Account />
         </Wrapper>
         <Wrapper>
-          <Heading1>오시는 길</Heading1>
+          <Heading1>{'\uD83D\uDCCD'}오시는 길</Heading1>
           <Location />
         </Wrapper>
         <Wrapper>
