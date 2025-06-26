@@ -6,8 +6,8 @@ const PhotoGallery = () => {
   const smallItemStyles: React.CSSProperties = {
     cursor: 'pointer',
     objectFit: 'contain',
-    width: '120px',
-    height: '180px',
+    width: '110px',
+    height: '165px',
   };
 
   return (
