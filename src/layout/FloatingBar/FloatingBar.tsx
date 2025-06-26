@@ -41,48 +41,46 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   //   });
   // }, []);
 
-  // 태희
   useEffect(() => {
     if (window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init('585295ad1f3ada21c4afd0afa10e8e4e'); // 본인 키로 바꾸기
+      window.Kakao.init('585295ad1f3ada21c4afd0afa10e8e4e');
       // window.Kakao.isInitialized();
     }
   }, []);
 
   const shareToKakao = () => {
-    window.Kakao.Link.sendCustom({
-      templateId: 121829,
-    });
-    // window.Kakao.Share.sendDefault({
-    //   objectType: 'feed',
-    //   content: {
-    //     title: '강태희 🖤 김지원 결혼합니다!',
-    //     description: '2025년 11월 16일 (일) 11:00 · 송파 더컨벤션 아모르홀',
-    //     imageUrl: 'https://wedding-iota-nine.vercel.app/thumbnail.jpg',
-    //     link: {
-    //       webUrl: 'https://wedding-iota-nine.vercel.app',
-    //       mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
-    //     },
-    //   },
-    //   buttons: [
-    //     {
-    //       title: '청첩장 보기',
-    //       link: {
-    //         webUrl: 'https://wedding-iota-nine.vercel.app',
-    //         mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
-    //       },
-    //     },
-    //     {
-    //       title: '위치 보기',
-    //       link: {
-    //         webUrl: 'https://wedding-iota-nine.vercel.app',
-    //         mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
-    //       },
-    //     },
-    //   ],
+    // window.Kakao.Link.sendCustom({
+    //   templateId: 121829,
     // });
+    window.Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '강태희 🖤 김지원 결혼합니다!',
+        description: '2025년 11월 16일 (일) 11:00 · 송파 더컨벤션 아모르홀',
+        imageUrl: 'https://wedding-iota-nine.vercel.app/thumbnail.jpg',
+        link: {
+          webUrl: 'https://wedding-iota-nine.vercel.app',
+          mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+        },
+      },
+      buttons: [
+        {
+          title: '청첩장 보기',
+          link: {
+            webUrl: 'https://wedding-iota-nine.vercel.app',
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+          },
+        },
+        {
+          title: '위치 보기',
+          link: {
+            webUrl: 'https://wedding-iota-nine.vercel.app',
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+          },
+        },
+      ],
+    });
   };
-  // 태희
 
   // const handleCopy = () => {
   //   navigator.clipboard.writeText(window.location.href).then(
