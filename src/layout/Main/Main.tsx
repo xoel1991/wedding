@@ -17,7 +17,7 @@ export default Main;
 
 const MainImg = styled.img`
   border-radius: 200px 200px 0 0;
-  width: 100%;
+  width: 90%;
   max-width: 550px;
   padding-top: 20px;
 `;
