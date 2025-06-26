@@ -33,7 +33,7 @@ export default Accordion;
 const AccordionWrapper = styled.div`
   font-family: HSSanTokki20-Regular, serif;
   /* border: 1px solid #e6ece1; */
-  border: 1px solid #e88ca6;
+  border: 1px solid #dfdfdf;
   margin-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
