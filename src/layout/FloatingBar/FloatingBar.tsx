@@ -52,8 +52,38 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
     // window.Kakao.Link.sendCustom({
     //   templateId: 121829,
     // });
+    // window.Kakao.Share.sendDefault({
+    //   objectType: 'feed',
+    //   content: {
+    //     title: '강태희 🖤 김지원 결혼합니다!',
+    //     description: '2025년 11월 16일 (일요일) 11:00 \n더컨벤션 송파문정 13층 아모르홀',
+    //     imageUrl: `https://wedding-iota-nine.vercel.app/thumbnail.jpg?time=${Date.now()}`,
+    //     link: {
+    //       webUrl: 'https://wedding-iota-nine.vercel.app',
+    //       mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+    //     },
+    //   },
+    //   buttons: [
+    //     {
+    //       title: '청첩장 보기',
+    //       link: {
+    //         webUrl: 'https://wedding-iota-nine.vercel.app',
+    //         mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+    //       },
+    //     },
+    //     {
+    //       title: '위치 보기',
+    //       link: {
+    //         webUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
+    //         mobileWebUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
+    //       },
+    //     },
+    //   ],
+    // });
     window.Kakao.Share.sendDefault({
-      objectType: 'feed',
+      objectType: 'location',
+      address: '서울 송파구 송파대로 155 NH송파농협',
+      addressTitle: '더컨벤션 송파문정',
       content: {
         title: '강태희 🖤 김지원 결혼합니다!',
         description: '2025년 11월 16일 (일요일) 11:00 \n더컨벤션 송파문정 13층 아모르홀',
@@ -63,22 +93,23 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
           mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
         },
       },
-      buttons: [
-        {
-          title: '청첩장 보기',
-          link: {
-            webUrl: 'https://wedding-iota-nine.vercel.app',
-            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
-          },
-        },
-        {
-          title: '위치 보기',
-          link: {
-            webUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
-            mobileWebUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
-          },
-        },
-      ],
+      buttonTitle: '청첩장 보기',
+      // buttons: [
+      //   {
+      //     title: '청첩장 보기',
+      //     link: {
+      //       webUrl: 'https://wedding-iota-nine.vercel.app',
+      //       mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+      //     },
+      //   },
+      //   {
+      //     title: '위치 보기',
+      //     link: {
+      //       webUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
+      //       mobileWebUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
+      //     },
+      //   },
+      // ],
     });
   };
 
