@@ -22,7 +22,8 @@ body {
   min-width: 280px;
   display: flex;
   justify-content: center;
-  background-color: #e0e7d9;
+  /* background-color: #e0e7d9; */
+  background-color: #fff;
 
   /* 추가 */
   overflow-x: hidden;

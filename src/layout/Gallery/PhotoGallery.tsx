@@ -7,7 +7,7 @@ const PhotoGallery = () => {
     cursor: 'pointer',
     objectFit: 'contain',
     width: '150px',
-    height: '180px',
+    height: '225px',
   };
 
   return (
