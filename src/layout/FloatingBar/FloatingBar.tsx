@@ -53,23 +53,23 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         description: '2025년 11월 16일 (일) 11:00 · 송파 더컨벤션 아모르홀',
         imageUrl: 'https://wedding-iota-nine.vercel.app/thumbnail.jpg',
         link: {
-          mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
           webUrl: 'https://wedding-iota-nine.vercel.app',
+          mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
         },
       },
       buttons: [
         {
           title: '청첩장 보기',
           link: {
-            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
             webUrl: 'https://wedding-iota-nine.vercel.app',
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
           },
         },
         {
           title: '위치 보기',
           link: {
-            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
             webUrl: 'https://wedding-iota-nine.vercel.app',
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
           },
         },
       ],
