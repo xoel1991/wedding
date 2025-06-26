@@ -94,22 +94,6 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         },
       },
       buttonTitle: '청첩장 보기',
-      // buttons: [
-      //   {
-      //     title: '청첩장 보기',
-      //     link: {
-      //       webUrl: 'https://wedding-iota-nine.vercel.app',
-      //       mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
-      //     },
-      //   },
-      //   {
-      //     title: '위치 보기',
-      //     link: {
-      //       webUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
-      //       mobileWebUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
-      //     },
-      //   },
-      // ],
     });
   };
 
