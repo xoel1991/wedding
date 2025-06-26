@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { NavermapsProvider } from 'react-naver-maps';
+// import { NavermapsProvider } from 'react-naver-maps';
 import { Heading1 } from '@/components/Text.tsx';
 import Wrapper from '@/components/Wrapper.tsx';
 import Account from '@/layout/Account/Account.tsx';
@@ -14,7 +14,7 @@ import Main from '@/layout/Main/Main.tsx';
 function App() {
   // const ncpClientId = import.meta.env.VITE_APP_NAVERMAPS_CLIENT_ID;
   // const ncpClientId: string = process.env.REACT_APP_API_KEY ? process.env.REACT_APP_API_KEY : '';
-  const ncpClientId = 'xlkmt8gilu';
+  // const ncpClientId = 'xlkmt8gilu';
   const [isVisible, setIsVisible] = useState(false);
   const galleryRef = useRef(null);
 
@@ -39,34 +39,34 @@ function App() {
   };
 
   return (
-    <NavermapsProvider ncpClientId={ncpClientId}>
-      <Container>
-        <Wrapper>
-          <Main />
-        </Wrapper>
-        <Wrapper>
-          <Heading1>모시는 글</Heading1>
-          <Invitation />
-        </Wrapper>
-        <Wrapper ref={galleryRef}>
-          <Heading1>Gallery</Heading1>
-          <GalleryWrap />
-        </Wrapper>
-        <Wrapper>
-          <Heading1>마음 전하실 곳</Heading1>
-          <Account />
-        </Wrapper>
-        <Wrapper>
-          <Heading1>{'\uD83D\uDCCD'} 오시는 길</Heading1>
-          <Location />
-        </Wrapper>
-        <Wrapper>
-          {/* <Heading1>신랑 신부에게</Heading1> */}
-          {/* <Guestbook /> */}
-        </Wrapper>
-        <FloatingBar isVisible={isVisible} />
-      </Container>
-    </NavermapsProvider>
+    // <NavermapsProvider ncpClientId={ncpClientId}>
+    <Container>
+      <Wrapper>
+        <Main />
+      </Wrapper>
+      <Wrapper>
+        <Heading1>모시는 글</Heading1>
+        <Invitation />
+      </Wrapper>
+      <Wrapper ref={galleryRef}>
+        <Heading1>Gallery</Heading1>
+        <GalleryWrap />
+      </Wrapper>
+      <Wrapper>
+        <Heading1>마음 전하실 곳</Heading1>
+        <Account />
+      </Wrapper>
+      <Wrapper>
+        <Heading1>{'\uD83D\uDCCD'} 오시는 길</Heading1>
+        <Location />
+      </Wrapper>
+      <Wrapper>
+        {/* <Heading1>신랑 신부에게</Heading1> */}
+        {/* <Guestbook /> */}
+      </Wrapper>
+      <FloatingBar isVisible={isVisible} />
+    </Container>
+    // {/* </NavermapsProvider> */}
   );
 }
 

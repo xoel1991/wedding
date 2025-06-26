@@ -1,4 +1,5 @@
 // import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import styled from '@emotion/styled';
 import data from 'data.json';
 // import { increment, onValue, ref, update } from 'firebase/database';
@@ -8,6 +9,20 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
+
+interface KakaoSDK {
+  init: (key: string) => void;
+  isInitialized: () => boolean;
+  Share: {
+    sendDefault: (options: any) => void;
+  };
+}
+
+declare global {
+  interface Window {
+    Kakao: KakaoSDK;
+  }
+}
 
 const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   const { emojis } = data;
@@ -23,16 +38,55 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   //   });
   // }, []);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText(window.location.href).then(
-      () => {
-        alert('주소가 복사되었습니다.😉😉');
+  // 태희
+  useEffect(() => {
+    if (window.Kakao && !window.Kakao.isInitialized()) {
+      window.Kakao.init('e4ee7ef90a02bc85ce5b9b432706f9f2'); // 본인 키로 바꾸기
+    }
+  }, []);
+
+  const shareToKakao = () => {
+    window.Kakao.Share.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '강태희 💍 김지원 결혼합니다!',
+        description: '2025년 11월 16일 (일) 11:00 · 송파 더컨벤션 아모르홀',
+        imageUrl: 'https://wedding-iota-nine.vercel.app/thumbnail.jpg',
+        link: {
+          mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+          webUrl: 'https://wedding-iota-nine.vercel.app',
+        },
       },
-      () => {
-        alert('주소 복사에 실패했습니다.🥲🥲');
-      },
-    );
+      buttons: [
+        {
+          title: '청첩장 보기',
+          link: {
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+            webUrl: 'https://wedding-iota-nine.vercel.app',
+          },
+        },
+        {
+          title: '위치 보기',
+          link: {
+            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+            webUrl: 'https://wedding-iota-nine.vercel.app',
+          },
+        },
+      ],
+    });
   };
+  // 태희
+
+  // const handleCopy = () => {
+  //   navigator.clipboard.writeText(window.location.href).then(
+  //     () => {
+  //       alert('주소가 복사되었습니다.😉😉');
+  //     },
+  //     () => {
+  //       alert('주소 복사에 실패했습니다.🥲🥲');
+  //     },
+  //   );
+  // };
 
   const handleCount = () => {
     void jsConfetti.addConfetti({ emojis });
@@ -55,7 +109,8 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         <Heart fill="#e88ca6" />
         {/*{count || ''}*/}
       </Button>
-      <Button onClick={handleCopy}>
+      {/* <Button onClick={handleCopy}> */}
+      <Button onClick={shareToKakao}>
         <Share fill="#e88ca6" />
         공유
       </Button>
