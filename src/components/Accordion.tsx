@@ -32,7 +32,8 @@ export default Accordion;
 
 const AccordionWrapper = styled.div`
   font-family: HSSanTokki20-Regular, serif;
-  border: 1px solid #e6ece1;
+  /* border: 1px solid #e6ece1; */
+  border: 1px solid #e88ca6;
   margin-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
@@ -43,7 +44,8 @@ const AccordionHeader = styled.div<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #e6ece1;
+  */ background-color: #e6ece1; */
+  background-color: #fff;
   padding: 0 15px;
   cursor: pointer;
   & > p {
