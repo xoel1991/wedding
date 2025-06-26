@@ -5,6 +5,7 @@ import data from 'data.json';
 // import { increment, onValue, ref, update } from 'firebase/database';
 // import { realtimeDb } from 'firebase.ts';
 import JSConfetti from 'js-confetti';
+import Copy from '@/assets/icons/copy.svg?react';
 import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
@@ -97,16 +98,16 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
     });
   };
 
-  // const handleCopy = () => {
-  //   navigator.clipboard.writeText(window.location.href).then(
-  //     () => {
-  //       alert('주소가 복사되었습니다.😉😉');
-  //     },
-  //     () => {
-  //       alert('주소 복사에 실패했습니다.🥲🥲');
-  //     },
-  //   );
-  // };
+  const handleCopy = () => {
+    navigator.clipboard.writeText(window.location.href).then(
+      () => {
+        alert('주소가 복사되었습니다.😉😉');
+      },
+      () => {
+        alert('주소 복사에 실패했습니다.🥲🥲');
+      },
+    );
+  };
 
   const handleCount = () => {
     void jsConfetti.addConfetti({ emojis });
@@ -129,14 +130,14 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         <Heart fill="#e88ca6" />
         {/*{count || ''}*/}
       </Button>
-      {/* <Button onClick={handleCopy}> */}
       <Button onClick={shareToKakao}>
         <Share fill="#e88ca6" />
-        공유
+      </Button>
+      <Button onClick={handleCopy}>
+        <Copy fill="#e88ca6" />
       </Button>
       <Button onClick={handleScroll}>
         <Upward fill="#e88ca6" />
-        위로
       </Button>
     </Nav>
   );
