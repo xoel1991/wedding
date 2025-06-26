@@ -16,6 +16,7 @@ const Address = () => {
           </Way>
         );
       })}
+      <BlankWrapper />
     </WayWrapper>
   );
 };
@@ -33,4 +34,11 @@ const Way = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
+`;
+
+const BlankWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 30px 0px;
 `;
