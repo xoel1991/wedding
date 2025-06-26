@@ -19,7 +19,7 @@ const MainImg = styled.img`
   border-radius: 200px 200px 0 0;
   width: 90%;
   max-width: 530px;
-  padding-top: 40px;
+  padding-top: 30px;
 `;
 
 const MainTitle = styled.p`
