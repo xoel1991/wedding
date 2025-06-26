@@ -56,7 +56,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
       objectType: 'feed',
       content: {
         title: '강태희 🖤 김지원 결혼합니다!',
-        description: '2025년 11월 16일 (일) 11:00 · 송파 더컨벤션 아모르홀',
+        description: '2025년 11월 16일 (일) 11:00 \n송파 더컨벤션 아모르홀',
         imageUrl: 'https://wedding-iota-nine.vercel.app/thumbnail.jpg',
         link: {
           webUrl: 'https://wedding-iota-nine.vercel.app',
