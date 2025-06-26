@@ -55,7 +55,7 @@ const PlusButton = styled.div`
   padding: 6px 12px;
   font-size: 1rem;
   align-items: center;
-  border-radius: 5px;
-  border: 0.5px solid #e88ca6;
+  border-radius: 4px;
+  border: 1px solid #e88ca6;
   cursor: pointer;
 `;
