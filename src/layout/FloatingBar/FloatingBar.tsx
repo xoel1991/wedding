@@ -44,8 +44,8 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   // 태희
   useEffect(() => {
     if (window.Kakao && !window.Kakao.isInitialized()) {
-      window.Kakao.init('e4ee7ef90a02bc85ce5b9b432706f9f2'); // 본인 키로 바꾸기
-      window.Kakao.isInitialized();
+      window.Kakao.init('585295ad1f3ada21c4afd0afa10e8e4e'); // 본인 키로 바꾸기
+      // window.Kakao.isInitialized();
     }
   }, []);
 
