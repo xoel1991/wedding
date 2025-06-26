@@ -74,8 +74,8 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
         {
           title: '위치 보기',
           link: {
-            webUrl: 'https://wedding-iota-nine.vercel.app',
-            mobileWebUrl: 'https://wedding-iota-nine.vercel.app',
+            webUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
+            mobileWebUrl: 'https://map.naver.com/p/entry/place/1958047921?c=17.00,0,0,0,dh',
           },
         },
       ],
