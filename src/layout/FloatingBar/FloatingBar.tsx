@@ -82,7 +82,7 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
     // });
     window.Kakao.Share.sendDefault({
       objectType: 'location',
-      address: '서울 송파구 송파대로 155 송파농협신청사 11-13층',
+      address: '더컨벤션 송파문정점 ',
       addressTitle: '더컨벤션 송파문정 13층 아모르홀',
       content: {
         title: '강태희 🖤 김지원 결혼합니다!',
