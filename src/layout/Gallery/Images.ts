@@ -181,8 +181,10 @@ const images = [
   {
     alt: 'image24',
     source: image24,
-    width: 640,
-    height: 960,
+    // width: 640,
+    width: 960,
+    // height: 960,
+    height: 640,
   },
   {
     alt: 'image25',
