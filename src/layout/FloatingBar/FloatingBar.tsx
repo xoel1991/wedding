@@ -10,6 +10,7 @@ import Heart from '@/assets/icons/heart_plus.svg?react';
 import Share from '@/assets/icons/share.svg?react';
 import Upward from '@/assets/icons/upward.svg?react';
 import Button from '@/components/Button.tsx';
+import { MainTextColor } from '@/components/Text.tsx';
 
 interface KakaoSDK {
   init: (key: string) => void;
@@ -127,17 +128,17 @@ const FloatingBar = ({ isVisible }: { isVisible: boolean }) => {
   return (
     <Nav isVisible={isVisible}>
       <Button onClick={handleCount}>
-        <Heart fill="#e88ca6" />
+        <Heart fill={MainTextColor} />
         {/*{count || ''}*/}
       </Button>
       <Button onClick={shareToKakao}>
-        <Share fill="#e88ca6" />
+        <Share fill={MainTextColor} />
       </Button>
       <Button onClick={handleCopy}>
-        <Copy fill="#e88ca6" />
+        <Copy fill={MainTextColor} />
       </Button>
       <Button onClick={handleScroll}>
-        <Upward fill="#e88ca6" />
+        <Upward fill={MainTextColor} />
       </Button>
     </Nav>
   );
