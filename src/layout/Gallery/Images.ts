@@ -79,8 +79,10 @@ const images = [
   {
     alt: 'image08',
     source: image08,
-    width: 640,
-    height: 960,
+    // width: 640,
+    width: 960,
+    // height: 960,
+    height: 640,
   },
   {
     alt: 'image09',
@@ -121,14 +123,18 @@ const images = [
   {
     alt: 'image15',
     source: image15,
-    width: 640,
-    height: 960,
+    // width: 640,
+    width: 960,
+    // height: 960,
+    height: 640,
   },
   {
     alt: 'image16',
     source: image16,
-    width: 640,
-    height: 960,
+    // width: 640,
+    width: 960,
+    // height: 960,
+    height: 640,
   },
   {
     alt: 'image17',
