@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 // export const MainTextColor = '#e88ca6';
-export const MainTextColor = '#219e64';
+export const MainTextColor = '#64c466';
 
 export const Heading1 = styled.p`
   font-family: HSSanTokki20-Regular, serif;
