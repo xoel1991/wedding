@@ -54,7 +54,7 @@ import image53 from '@/assets/images/53.jpeg';
 import image54 from '@/assets/images/54.jpeg';
 import image55 from '@/assets/images/55.jpeg';
 import image56 from '@/assets/images/56.jpeg';
-import image57 from '@/assets/images/57.jpeg';
+// import image57 from '@/assets/images/57.jpeg';
 
 
 const images = [
@@ -402,12 +402,12 @@ const images = [
     width: 640,
     height: 960,
   },
-  {
-    alt: 'image57',
-    source: image57,
-    width: 640,
-    height: 960,
-  },
+  // {
+  //   alt: 'image57',
+  //   source: image57,
+  //   width: 640,
+  //   height: 960,
+  // },
 ];
 
 export default images;
