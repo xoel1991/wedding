@@ -54,7 +54,8 @@ import image53 from '@/assets/images/53.jpeg';
 import image54 from '@/assets/images/54.jpeg';
 import image55 from '@/assets/images/55.jpeg';
 import image56 from '@/assets/images/56.jpeg';
-// import image57 from '@/assets/images/57.jpeg';
+import image57 from '@/assets/images/57.jpeg';
+import image58 from '@/assets/images/58.jpeg';
 
 
 const images = [
@@ -212,8 +213,10 @@ const images = [
   {
     alt: 'image26',
     source: image26,
-    width: 640,
-    height: 960,
+    // width: 640,
+    // height: 960,
+    width: 960,
+    height: 640,
   },
   {
     alt: 'image27',
@@ -242,16 +245,16 @@ const images = [
   {
     alt: 'image31',
     source: image31,
-    // width: 640,
-    // height: 960,
-    width: 960,
-    height: 640,
+    width: 640,
+    height: 960,
   },
   {
     alt: 'image32',
     source: image32,
-    width: 640,
-    height: 960,
+    // width: 640,
+    // height: 960,
+    width: 960,
+    height: 640,
   },
   {
     alt: 'image33',
@@ -280,16 +283,16 @@ const images = [
   {
     alt: 'image37',
     source: image37,
-    // width: 640,
-    // height: 960,
-    width: 960,
-    height: 640,
+    width: 640,
+    height: 960,
   },
   {
     alt: 'image38',
     source: image38,
-    width: 640,
-    height: 960,
+    // width: 640,
+    // height: 960,
+    width: 960,
+    height: 640,
   },
   {
     alt: 'image39',
@@ -306,16 +309,16 @@ const images = [
   {
     alt: 'image41',
     source: image41,
-    // width: 640,
-    // height: 960,
-    width: 960,
-    height: 640,
+    width: 640,
+    height: 960,
   },
   {
     alt: 'image42',
     source: image42,
-    width: 640,
-    height: 960,
+    // width: 640,
+    // height: 960,
+    width: 960,
+    height: 640,
   },
   {
     alt: 'image43',
@@ -402,12 +405,18 @@ const images = [
     width: 640,
     height: 960,
   },
-  // {
-  //   alt: 'image57',
-  //   source: image57,
-  //   width: 640,
-  //   height: 960,
-  // },
+  {
+    alt: 'image57',
+    source: image57,
+    width: 640,
+    height: 960,
+  },
+  {
+    alt: 'image58',
+    source: image58,
+    width: 640,
+    height: 960,
+  },
 ];
 
 export default images;
