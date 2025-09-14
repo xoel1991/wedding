@@ -7,6 +7,12 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 export default defineConfig({
   plugins: [react(), tsconfigPaths(), svgr()],
   // base: '/wedding/',
+  assetsInclude: ["**/*.JPG", "**/*.JPEG", "**/*.PNG"],
+  resolve: {
+    alias: {
+      "@": "/src"
+    }
+  },
   server: {
     port: 3000, // 원하는 포트로 변경
   },
