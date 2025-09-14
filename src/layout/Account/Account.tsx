@@ -18,8 +18,8 @@ const Account = () => {
                   relation={account.relation}
                   bank={account.bank}
                   account={account.account}
-                  kakaopayAccount={account.kakaopayAccount}
-                  tossAccount={account.tossAccount}
+                // kakaopayAccount={account.kakaopayAccount}
+                // tossAccount={account.tossAccount}
                 />
               );
             })}
