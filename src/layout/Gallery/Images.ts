@@ -1,13 +1,13 @@
-import image01 from '@/assets/images/01.JPG';
-import image02 from '@/assets/images/02.JPG';
-import image03 from '@/assets/images/03.JPG';
-import image04 from '@/assets/images/04.JPG';
+import image01 from '@/assets/images/01.jpeg';
+import image02 from '@/assets/images/02.jpeg';
+import image03 from '@/assets/images/03.jpeg';
+import image04 from '@/assets/images/04.jpeg';
 import image05 from '@/assets/images/05.JPEG';
 import image06 from '@/assets/images/06.JPEG';
-import image07 from '@/assets/images/07.JPG';
-import image08 from '@/assets/images/08.JPG';
-import image09 from '@/assets/images/09.JPG';
-import image10 from '@/assets/images/10.JPG';
+import image07 from '@/assets/images/07.jpeg';
+import image08 from '@/assets/images/08.jpeg';
+import image09 from '@/assets/images/09.jpeg';
+import image10 from '@/assets/images/10.jpeg';
 import image11 from '@/assets/images/11.jpeg';
 import image12 from '@/assets/images/12.jpeg';
 import image13 from '@/assets/images/13.jpeg';
@@ -55,7 +55,6 @@ import image54 from '@/assets/images/54.jpeg';
 import image55 from '@/assets/images/55.jpeg';
 import image56 from '@/assets/images/56.jpeg';
 import image57 from '@/assets/images/57.jpeg';
-import image58 from '@/assets/images/58.jpeg';
 
 
 const images = [
@@ -410,13 +409,7 @@ const images = [
     source: image57,
     width: 640,
     height: 960,
-  },
-  {
-    alt: 'image58',
-    source: image58,
-    width: 640,
-    height: 960,
-  },
+  }
 ];
 
 export default images;
