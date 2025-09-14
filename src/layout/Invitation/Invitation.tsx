@@ -18,6 +18,7 @@ const Invitation = () => {
         rel="noreferrer">
         구글 캘린더 추가하기
       </RoundButton> */}
+      <BlankWrapper />
     </InvitationWrapper>
   );
 };
@@ -29,4 +30,11 @@ const InvitationWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 20px;
+`;
+
+const BlankWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 5px 0px;
 `;

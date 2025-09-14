@@ -18,6 +18,12 @@ export const Heading2 = styled.p`
   white-space: pre-line;
 `;
 
+export const NoticeText = styled.p`
+  line-height: 1;
+  margin: 0;
+  white-space: pre-line;
+`;
+
 export const PointTitle = styled.p`
   font-family: HSSanTokki20-Regular, serif;
   line-height: 1;

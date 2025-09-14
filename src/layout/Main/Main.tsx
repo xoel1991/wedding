@@ -9,6 +9,7 @@ const Main = () => {
       <MainImg src={mainImg} />
       <MainTitle>{greeting.title}</MainTitle>
       <SubTitle>{greeting.eventDetail}</SubTitle>
+      <BlankWrapper />
     </div>
   );
 };
@@ -35,4 +36,13 @@ const SubTitle = styled.p`
   color: #2f2120;
   line-height: 140%;
   white-space: pre-line;
+  // margin:40px;
 `;
+
+const BlankWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px 0px;
+`;
+
