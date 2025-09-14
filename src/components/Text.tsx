@@ -20,7 +20,7 @@ export const Heading2 = styled.p`
 
 export const NoticeText = styled.p`
   line-height: 1;
-  margin: 0;
+  margin: 5px;
   white-space: pre-line;
 `;
 
