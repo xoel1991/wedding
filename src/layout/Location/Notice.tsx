@@ -1,13 +1,13 @@
 import styled from '@emotion/styled';
 import data from 'data.json';
-import { NoticeText } from '@/components/Text.tsx';
+import { PointTitle, Caption } from '@/components/Text.tsx';
 
 const Address = () => {
   const { noticeInfo } = data;
   return (
     <WayWrapper>
-      <NoticeText>{noticeInfo.info1}</NoticeText>
-      <NoticeText>{noticeInfo.info2}</NoticeText>
+      <PointTitle>{noticeInfo.title}</PointTitle>
+      <Caption>{noticeInfo.info1}</Caption>
     </WayWrapper>
   );
 };
