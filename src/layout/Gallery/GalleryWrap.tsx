@@ -47,6 +47,7 @@ const WhiteGradientOverlay = styled.div`
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 90%);
+  pointer-events: none; /* 클릭 통과 */
 `;
 
 const PlusButton = styled.div`
