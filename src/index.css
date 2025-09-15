@@ -27,7 +27,7 @@ body {
 
   /* 추가 */
   overflow-x: hidden;
-  font-size: calc(16px * 1.2);
+  /* font-size: calc(16px * 1.2); */
   /* 24px */
 }
 
