@@ -27,20 +27,20 @@ body {
 
   /* 추가 */
   overflow-x: hidden;
+  font-size: calc(16px * 1.2);
+  /* 24px */
 }
 
 @font-face {
   font-family: 'HSSanTokki20-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2')
-    format('woff2');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405@1.0/HSSanTokki20-Regular.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SUITE-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2')
-    format('woff2');
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
