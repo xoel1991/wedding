@@ -4,13 +4,13 @@ import Notice from './Notice.tsx';
 import Address from './Address.tsx';
 import Map from './Map.tsx';
 import MapButtons from './MapButtons.tsx';
-import { Caption, PointTitle } from '@/components/Text.tsx';
+import { Caption, HeadTitle } from '@/components/Text.tsx';
 
 const Location = () => {
   const { mapInfo } = data;
   return (
     <LocationWrapper>
-      <PointTitle>{mapInfo.address1}</PointTitle>
+      <HeadTitle>{mapInfo.address1}</HeadTitle>
       <Caption textAlign={'center'}>{mapInfo.address2}</Caption>
       <Map />
       <MapButtons />

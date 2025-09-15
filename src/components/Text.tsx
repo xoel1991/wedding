@@ -33,6 +33,16 @@ export const PointTitle = styled.p`
   white-space: pre-line;
 `;
 
+export const HeadTitle = styled.p`
+  font-family: HSSanTokki20-Regular, serif;
+  line-height: 1;
+  margin: 0;
+  // color: #e88ca6;
+  color: ${MainTextColor};
+  white-space: pre-line;
+  font-size: 1.2em;
+`;
+
 export const Paragraph = styled.p`
   line-height: 2.2rem;
   white-space: pre-line;

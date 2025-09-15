@@ -32,7 +32,8 @@ const MainTitle = styled.p`
 `;
 
 const SubTitle = styled.p`
-  font-size: 1.1rem;
+  // font-size: 1.1rem;
+  font-size: calc(1.1rem * 1.2); 
   color: #2f2120;
   line-height: 140%;
   white-space: pre-line;
